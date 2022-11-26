@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bubblegum+Sans&display=swap');
+
+body {
+    background-color: #d9d1d1;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+        
+}
+
+li{
+    font-size: small;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: darkgrey;
+    opacity: 0.3;
+}
