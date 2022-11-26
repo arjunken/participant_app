@@ -5,7 +5,7 @@ const participantsList = document.querySelector(".participants-list");
 const deleteBtn = document.querySelector(".delete-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 
-const url = "http://localhost:4000/participants";
+const url = "https://participant-api.vercel.app/participants";
 
 //Get Participants
 const getParticipants = async () => {
