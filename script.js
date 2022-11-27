@@ -9,7 +9,7 @@ const url = "https://participant-api.vercel.app/participants";
 
 //Get Participants
 const getParticipants = async () => {
-  const response = await fetch(url, { mode: "no-cors" });
+  const response = await fetch(url);
   const data = await response.json();
   return data;
 };
@@ -30,7 +30,6 @@ getParticipants()
 const addParticipants = async (name, age, phone) => {
   const response = await fetch(url, {
     method: "POST",
-    mode: "no-cors",
     headers: {
       "Content-Type": "application/json",
     },
@@ -77,7 +76,6 @@ plist.addEventListener("click", (e) => {
 const updateParticipant = async (id, name, age, phone) => {
   const response = await fetch(url + "/" + id, {
     method: "PUT",
-    mode: "no-cors",
     headers: {
       "Content-Type": "application/json",
     },
@@ -115,7 +113,6 @@ formUpdate.addEventListener("submit", (e) => {
 const deleteParticipant = async (id) => {
   const response = await fetch(url + "/" + id, {
     method: "DELETE",
-    mode: "no-cors",
   });
   if (response.status != 200) {
     throw new Error("Server did not accept the request!");
